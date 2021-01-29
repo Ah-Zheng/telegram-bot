@@ -6,6 +6,9 @@
   "repository": "https://github.com/jerry092383/heroku-telegram-bot.git",
   "author": "Jerry092383 <jerry092383@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "node-telegram-bot-api": "^0.51.0"
   }
