@@ -6,6 +6,6 @@ const bot = new TelegramBot(token, { polling: true });
 bot.onText(/\/start/, (msg) => {
     console.log('msg :>> ', msg);
     const chatId = msg.chat.id;
-    const res = `${msg.chat.username} 你好`;
+    const res = `${msg.from.username} 你好`;
     bot.sendMessage(chatId, res);
 });
