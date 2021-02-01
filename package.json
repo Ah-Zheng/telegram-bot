@@ -7,9 +7,10 @@
   "author": "Jerry092383 <jerry092383@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
-    "node-telegram-bot-api": "^0.51.0"
+    "node-telegram-bot-api": "^0.51.0",
+    "nodemon": "^2.0.7"
   }
 }
