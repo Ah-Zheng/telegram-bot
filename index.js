@@ -8,7 +8,7 @@ const bot = new TelegramBot(token, { polling: true });
 bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
     const res = `${msg.from.username} 你好`;
-    bot.sendMessage(chatId, msg);
+    bot.sendMessage(chatId, JSON.stringify(msg));
     bot.sendMessage(chatId, `${msg.from.first_name} 傳訊息`, {
         reply_markup: {
             one_time_keyboard: true,
